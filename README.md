@@ -1,137 +1,100 @@
-# Titanic Survival Analysis
+# 🚢 Titanic Survival Analysis
 
-My first data analysis project where I explored the Titanic dataset to understand what factors influenced passenger survival.
+Exploratory data analysis on the legendary Titanic dataset, uncovering the key factors that determined passenger survival through statistical analysis and compelling visualizations.
 
-## Project Overview
+---
 
-This project analyzes the famous Titanic dataset to answer questions like:
-- What was the overall survival rate?
-- Did gender affect survival chances?
-- Did passenger class matter?
-- Did age play a role?
-- Did traveling with family help or hurt?
-- Did ticket fare (price) affect survival?
+## 📌 Project Overview
 
-## Key Findings
+The Titanic disaster is one of history's most analyzed datasets — and for good reason. This project goes beyond surface-level analysis to systematically identify which passenger attributes most strongly influenced survival, revealing stark inequalities in who made it out alive.
 
-After analyzing 891 passengers, I discovered:
+---
 
-1. **Gender was the biggest factor:** Women had 74% survival rate vs men at 19%
-2. **Class mattered a lot:** 1st class had 63% survival, 3rd class only 24%
-3. **Children were protected:** Kids under 12 had 58% survival rate
-4. **Small families survived better:** Families of 2-4 had best chances
-5. **Money helped:** Higher ticket prices = better survival
+## ✨ What's Covered
 
-### The harsh reality:
-- Poor, male, 3rd-class passenger = ~15% survival chance
-- Wealthy, female, 1st-class passenger = ~90% survival chance
+- 👥 Overall survival rate analysis across 891 passengers
+- 👩‍👦 Gender impact — survival rate breakdown by male vs female
+- 🎫 Passenger class analysis — 1st vs 2nd vs 3rd class survival
+- 👶 Age group segmentation and survival patterns
+- 👨‍👩‍👧 Family size impact on survival chances
+- 💰 Fare vs survival correlation analysis
+- 🌍 Embarkation port and its effect on survival
 
-## Tools & Technologies
+---
 
-- **Python 3**
-- **Pandas** - data manipulation
-- **Matplotlib & Seaborn** - visualizations
-- **Jupyter Notebook** - analysis environment
+## 🔍 Key Findings
 
-## Project Structure
+| Factor | Finding |
+|--------|---------|
+| Gender | Women had 74% survival rate vs 19% for men |
+| Class | 1st class had 63% survival, 3rd class only 24% |
+| Age | Children under 12 had 58% survival rate |
+| Family Size | Families of 2–4 had the best survival chances |
+| Fare | Higher ticket prices strongly correlated with survival |
+
+---
+
+## 📊 Dataset
+
+- **Source:** Kaggle — Titanic Dataset
+- **Records:** 891 passengers
+- **Features:** Socioeconomic status, family relations, embarkation details, survival status
+
+---
+
+## 🛠️ Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-4B8BBE?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+
+---
+
+## 📁 Project Structure
+
 ```
-titanic-analysis/
-│
-├── titanic_analysis.ipynb    # Main analysis notebook
-├── data/
-│   └── Titanic-Dataset.csv   # Dataset
-├── images/                    # Saved visualizations
-│   ├── survival_count.png
-│   ├── gender_survival.png
-│   ├── class_survival.png
-│   ├── age_survival.png
-│   ├── family_survival.png
-│   ├── fare_survival.png
-│   └── port_survival.png
-└── README.md                  # This file
+Titanic-Survival-Analysis/
+├── Titanic-Analysis.ipynb    # Main analysis notebook
+├── data/                     # Raw dataset
+├── images/                   # Saved visualizations
+└── README.md                 # Project documentation
 ```
 
-## How to Run
+---
 
-1. Clone this repository:
+## 🚀 How to Run
+
+**1. Clone the repository**
 ```bash
-git clone https://github.com/shubhamjais04/titanic-analysis.git
-cd titanic-analysis
+git clone https://github.com/shubhamjais04/Titanic-Survival-Analysis.git
+cd Titanic-Survival-Analysis
 ```
 
-2. Install required libraries:
+**2. Install dependencies**
 ```bash
 pip install pandas numpy matplotlib seaborn jupyter
 ```
 
-3. Open Jupyter Notebook:
+**3. Open the notebook**
 ```bash
-jupyter notebook titanic_analysis.ipynb
+jupyter notebook Titanic-Analysis.ipynb
 ```
 
-4. Run all cells to see the analysis!
-
-## Visualizations
-
-The project includes several visualizations:
-- Survival rate comparisons
-- Gender-based analysis
-- Class-based analysis
-- Age distribution analysis
-- Family size impact
-- Fare correlation
-
-Check the `images/` folder for all saved plots.
-
-## 💭 What I Learned
-
-**Technical Skills:**
-- Handling missing data (used median for Age, mode for Embarked)
-- Data cleaning and preprocessing
-- Creating meaningful visualizations
-- Feature engineering (FamilySize, AgeGroup, FareGroup)
-- Pandas groupby and aggregations
-
-**Challenges:**
-- Dealing with 77% missing Cabin data (decided to drop it)
-- Choosing appropriate visualizations
-- Creating meaningful age groups
-- Making insights clear and actionable
-
-**Next Steps:**
-- Build a machine learning model to predict survival
-- Analyze passenger titles (Mr., Mrs., etc.)
-- Try advanced visualization techniques
-
-## Dataset
-
-**Source:** Kaggle - Titanic Dataset
-
-**Description:** Contains information about 891 passengers including:
-- Demographics (age, gender)
-- Socioeconomic status (class, fare)
-- Family relations (siblings, parents, children)
-- Embarkation details
-- Survival status
-
-## 🙏 Acknowledgments
-
-- Dataset from Kaggle's Titanic competition
-- Inspired by various data science tutorials
-- First project in my data science journey!
-
-## 📧 Contact
-
-**Shubham Jaiswal**
-- Email: shubhjais.in@gmail.com
-- LinkedIn: [linkedin.com/in/shubhamjaiswal2004](https://linkedin.com/in/shubhamjaiswal2004)
-- GitHub: [@shubhamjais04](https://github.com/shubhamjais04)
+**4. Run all cells in order**
 
 ---
 
-⭐ If you found this project helpful, please give it a star!
+## 👨‍💻 Author
+
+**Shubham Jaiswal**  
+*Data storyteller | Letting the data speak — one survival pattern at a time*
 
 ---
 
-**Status:** Completed ✅  
-**Last Updated:** February 2026
+## 📬 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shubhjais04)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shubhamjais04)
